@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p{
+      background-color: #ccc;
+    }
+    /* p::before{
+      content: '我是before文字';
+      color: red;
+      display: block; */
+    /* } */
+    p::after{
+      content: '';
+      color: blue;
+      display: block;
+      width: 4em;
+      height: 2px;
+      background-color: #f00;
+    }
+  </style>
+</head>
+<body>
+  <p>探索當地。</p>
+</body>
+</html>
