@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 400px;
+      height: 300px;
+      background-color: #ddc;
+      margin: 100px;
+      position: relative;
+    }
+    .box::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 50px;
+      background-color: #00f;
+      bottom: 100%;
+      clip-path: polygon(0% 100%, 100% 100%, 30% 0%);
+    }
+    .box::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 50px;
+      background-color: #00f;
+      top: 100%;
+      left:0;
+      clip-path: polygon(0% 0%, 100% 0%, 70% 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis laudantium excepturi iure fugiat accusantium veniam quia sed blanditiis ipsum placeat deserunt ratione facere debitis voluptate incidunt reiciendis consectetur ab sint nobis voluptatibus autem repudiandae.
+  <div>
+  <div class="hexgen">
+    
+  </div>  
+</body>
+</html>
